@@ -39,4 +39,9 @@ public class Customer {
     public void setInvoices(List<Invoice> invoices) {
         this.invoices = invoices;
     }
+
+    @Override
+    public String toString() {
+        return "Customer [invoices=" + invoices + ", name=" + name + ", signupDate=" + signupDate + "]";
+    }
 }

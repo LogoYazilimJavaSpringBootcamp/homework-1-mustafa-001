@@ -44,4 +44,9 @@ public class Company {
         return result;
     }
 
+    @Override
+    public String toString() {
+        return "Company [field=" + field + ", name=" + name + "]";
+    }
+
 }
