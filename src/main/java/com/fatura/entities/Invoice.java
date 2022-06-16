@@ -2,6 +2,7 @@ package com.fatura.entities;
 
 import java.math.BigDecimal;
 import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class Invoice {
     private ZonedDateTime date;
@@ -40,6 +41,6 @@ public class Invoice {
 
     @Override
     public String toString() {
-        return "Invoice [amount=" + amount + ", company=" + company + ", date=" + date + "]";
+        return "Invoice [amount=" + amount + ", company=" + company + ", date=" + date.format(DateTimeFormatter.BASIC_ISO_DATE) + "]";
     }
 }

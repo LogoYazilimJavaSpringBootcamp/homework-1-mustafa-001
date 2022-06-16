@@ -1,6 +1,7 @@
 package com.fatura.entities;
 
 import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,6 +43,6 @@ public class Customer {
 
     @Override
     public String toString() {
-        return "Customer [invoices=" + invoices + ", name=" + name + ", signupDate=" + signupDate + "]";
+        return "Customer [invoices=" + invoices + ", name=" + name + ", signupDate=" + signupDate.format(DateTimeFormatter.BASIC_ISO_DATE) + "]";
     }
 }

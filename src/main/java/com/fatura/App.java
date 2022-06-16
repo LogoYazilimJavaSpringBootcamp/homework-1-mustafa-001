@@ -37,15 +37,29 @@ public class App {
         var companiesDb = new CompanyDatabase(companies);
         var invoicesDb = new InvoiceDatabase(invoices);
 
-        // Just to add two additional Customer's with letter C in their names.
-        customerDb.add("Mehmet Ceylan", ZonedDateTime.now());
-        customerDb.add("Hatice Kırlangıç", ZonedDateTime.now());
 
         homeworkRequirements(customerDb, companiesDb, invoicesDb);
     }
 
     public static void homeworkRequirements(CustomerDatabase customerDatabase, CompanyDatabase companyDatabase, InvoiceDatabase invoiceDatabase) {
 
+        System.out.println("----------------------------");
+        System.out.println("Tüm müşteriler:");
+        customerDatabase.getAll()
+                .stream()
+                .forEach(System.out::println);
+
+        //Yeni müşteri oluşturma.
+        System.out.println("----------------------------");
+        System.out.println("2 yeni müşteri ekleniyor:");
+        customerDatabase.add("Mehmet Ceylan", ZonedDateTime.now());
+        customerDatabase.add("Hatice Kırlangıç", ZonedDateTime.now());
+        System.out.println("Tüm müşteriler:");
+        customerDatabase.getAll()
+                .stream()
+                .forEach(System.out::println);
+
+        System.out.println("----------------------------");
         System.out.println("İçerisinde C harfi bulunan müsteriler:");
         customerDatabase.filter(it -> it.getName().contains("C") || it.getName().contains("c")).forEach(it -> System.out.println(it.getName()));
 

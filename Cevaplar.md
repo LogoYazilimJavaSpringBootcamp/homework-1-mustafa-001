@@ -16,7 +16,7 @@ Build tool bir yazılan kodunun derlenmesi, linklenmesi, , bağımlılıkların 
 
 ## 4 Collection framework içerisindeki yapıları örnekleyip açıklayınız.
 
-Collection framework temel olarak `Collection` ve `Map` interfacelerinden oluşur. `Collection` ise `List`, `Set`, `Deque` interfaceleri tarafından kalıtımlanır. Diğer tarafta ise `Map` interfacei `SortedMap` interfaceiyle benzer işlevi görür. Bu yapılar kademeli olarak Collections Framework'ün çeşitli methodlarını tanımlayarak yazılımcının istediği hassaslıkta koleksiyon türünü kabul etmesini sağlar. Örneğin metodumuz sadece `add` metoduna ihtiyaç duyuyorsa `void ornekMetod(Collection<T> koleksiyon)` gibi genel bir imza tanımlayabiliriz ancak eğer sadece `SortedSet`'te bulunan `last()` metoduna ihtiyaç duyuyorsak imzada bu interfacei kullanırız. 
+Collections framework temel olarak `Collection` ve `Map` interfacelerinden oluşur. `Collection` ise `List`, `Set`, `Deque` interfaceleri tarafından kalıtımlanır. Diğer tarafta ise `Map` interfacei `SortedMap` interfaceiyle benzer işlevi görür. Bu yapılar kademeli olarak Collections Framework'ün çeşitli methodlarını tanımlayarak yazılımcının istediği hassaslıkta koleksiyon türünü kabul etmesini sağlar. Örneğin metodumuz sadece `add` metoduna ihtiyaç duyuyorsa `void ornekMetod(Collection<T> koleksiyon)` gibi genel bir imza tanımlayabiliriz ancak eğer sadece `SortedSet`'te bulunan `last()` metoduna ihtiyaç duyuyorsak imzada bu interfacei kullanırız. 
 
 Bu interfaceler `ArrayList`, `HashSet` gibi classlar tarafından implemente edilir. Burada bu türeten classların isimlendirmesi \<*implementasyonyöntemi*>\<*interfaceismi*> şeklindedir. 
 
