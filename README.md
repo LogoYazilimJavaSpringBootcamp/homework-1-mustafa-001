@@ -1,3 +1,5 @@
+Cevaplar ve Açıklamalar bu dizindeki [Cevaplar.md](Cevaplar.md), [MavenKomutları.md](MavenKomutları.md) ve ÖdevdeKullanılanKavramlar.md dosyalarındadır.
+
 # Homework-1
 
 1. Java’nın platform bağımsızlığını nasıl sağladığını anlatınız.(5 PUAN)
